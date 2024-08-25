@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <TITLE>Ejemplo de formulario</TITLE>
+       <link rel="stylesheet" type="text/css" href="css/EstiloForm.css">
+    </HEAD>
+    <BODY>
+        <div id="stylized" class="myform">
+            <form id="form" name="form" method="get" action="enviado.html">
+                <h1>Formulario de registro</h1>
+                <p>Llenar los siguientes campos</p>
+                <Label>Nombre:
+                    <span class="small">Agrege su nombre</span>
+                </Label>
+                <input type="text" name="name" id="name" /><br>
+                <label>Año de nacimiento:
+                    <span class="small">Seleccione su año de nacimiento</span>
+                </label>
+                <input type="number" name"nacido" min="1900" /> <br>
+                <label>Email:
+                    <span class="small"> Agregue un email valido</span>  
+                </label>
+                <input type="text" name="email" id="email" /> <br>
+                <label>password:
+                    <span class="small">Min. 6 caracteres</span>
+                </label>
+                <input type="password" name="password" id="password" /> <br>
+                <button type="submit"> Enviar datos</button>
+                <div class="spacer"></div>
+            </form>
+        </div>
+        <style>
+            *{
+                margin: 10px;
+            }
+            span{
+                all: unset;
+            }
+        </style>
+    </BODY>
+</HTML>

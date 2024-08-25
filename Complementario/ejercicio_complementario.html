@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Ventas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9em;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border: 1px solid #333;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #333333; /* Color de fondo para el encabezado */
+            color: white; /* Color del texto del encabezado */
+        }
+        tr:nth-child(even) {
+            background-color: #FFFFCC; /* Color de fondo para filas pares */
+        }
+        tr:hover td {
+            background-color: #FFFF66; /* Color de fondo al pasar el ratón */
+        }
+        td:nth-child(1) {
+            background-image: url('imagenes/fondo_gris.gif'); /* Fondo para nombres de productos */
+        }
+        tfoot {
+            background-color: #CCCCCC; /* Color de fondo para el pie de tabla */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Nombre Producto</th>
+                <th>Venta Semana 1</th>
+                <th>Venta Semana 2</th>
+                <th>Venta Semana 3</th>
+                <th>Venta Semana 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pastas</td>
+                <td>125.89</td>
+                <td>159.78</td>
+                <td>130.56</td>
+                <td>116.57</td>
+            </tr>
+            <tr>
+                <td>Detergente</td>
+                <td>67.45</td>
+                <td>78.56</td>
+                <td>90.56</td>
+                <td>69.34</td>
+            </tr>
+            <tr>
+                <td>Sopas</td>
+                <td>45.67</td>
+                <td>34.45</td>
+                <td>45.89</td>
+                <td>67.80</td>
+            </tr>
+            <tr>
+                <td>Especias</td>
+                <td>17.56</td>
+                <td>18.67</td>
+                <td>15.89</td>
+                <td>13.23</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>256.57</td>
+                <td>291.46</td>
+                <td>282.90</td>
+                <td>267.94</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

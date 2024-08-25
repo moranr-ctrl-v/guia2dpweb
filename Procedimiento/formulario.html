@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Formularios - Ejemplo</title>
+    <style type="text/css">
+        <!--
+        BODY {background-color:#ffffaa;}
+        H3 {text-align:center; font-weight:bold; font-size:16pt; color:blue;}
+        HR {background-color:blue;}
+        -->
+    </style>
+</head>
+<body>
+
+<h3>Ejemplo de formulario</h3>
+<hr>
+
+<form method="get" enctype="text/plain">
+    Digita tu nombre y apellidos:&nbsp;
+    <input type="text" name="nombre" size="40" maxlength="40"><br><br>
+    Elige un tema: <br>
+    <input type="radio" name="tema" value="ciencia" checked> Ciencia<br>
+    <input type="radio" name="tema" value="arte"> Arte<br>
+    <input type="radio" name="tema" value="literatura"> Literatura<br><br>
+    Marca tus aficiones: <br>
+    <input type="checkbox" name="aficion" value="deporte" checked> Deporte<br>
+    <input type="checkbox" name="aficion" value="musica" checked> Música<br>
+    <input type="checkbox" name="aficion" value="lectura"> Lectura<br>
+    <input type="checkbox" name="aficion" value="pesca"> Pesca<br>
+    <input type="checkbox" name="aficion" value="pasear"> Pasear<br>
+    <input type="checkbox" name="aficion" value="cine"> Cine<br><br>
+    DIGITA LA CONTRASEA&NTILDE;A DE USUARIO: &nbsp; 
+    <input type="password" name="password" size="10" maxlength="10"><br><br>
+    <input type="submit" value="Enviar datos">
+    <input type="reset" value="Borrar datos"><br><br>
+</form>
+</body>
+</html>

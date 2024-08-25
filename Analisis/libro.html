@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="CSS/style.css"> -->
+    <title>Libro de visitas</title>
+</head>
+
+<body>
+    <form name="miformulario" action="Info.html" method="get">
+        <fieldset>
+            <legend>
+                <h1><b>Libro de visitas</b></h1>
+            </legend>
+            <div id="datos-personales" class="ma ir">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="nombre">Nombre:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="nombre" name="nombre">
+                        </td>
+                    </tr>
+                    <td>
+                        <label for="apellido">Apellidos:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="apellido" name="apellido">
+                    </td>
+                    </tr>
+                </table>
+                <div>
+                    <label for=""><b>Indica un pseudonimo y una contraseña</b></label><br>
+                    <label for="pseudonimo">Pseudónimo:</label>
+                    <input type="text" id="pseudonimo" name="pseudonimo" maxlength="16">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" maxlength="12">
+                </div>
+            </div>
+
+            <div>
+                <fieldset id="otros-datos" class="ma ir">
+                    <legend><b>Otros datos</b></legend>
+
+                    <div id="edad">
+                        <label>Edad:</label>
+                        <div>
+                            <input type="radio" id="edad1" name="edad" value="0-10">
+                            <label for="edad1">0 - 10</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="edad2" name="edad" value="11-20">
+                            <label for="edad2">11 - 20</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="edad3" name="edad" value="21-30">
+                            <label for="edad3">21 - 30</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="edad4" name="edad" value="31-40">
+                            <label for="edad4">31 - 40</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="edad5" name="edad" value="41-mas">
+                            <label for="edad5">41 o más</label>
+                        </div>
+                    </div>
+                    <div id="residencia">
+                        <label>¿Dónde vives?</label>
+                        <div>
+                            <input type="radio" id="palma" name="residencia" value="palma">
+                            <label for="palma">Palma de Mallorca</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="part-forana" name="residencia" value="part-forana">
+                            <label for="part-forana">Part forana de Mallorca</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="menorca" name="residencia" value="menorca">
+                            <label for="menorca">Menorca</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="eivissa" name="residencia" value="eivissa">
+                            <label for="eivissa">Eivissa o Formentera</label>
+                        </div>
+                        <div>
+                            <label for="otros-residencia">Otros:</label>
+                            <input type="text" id="otros-residencia" name="otros-residencia">
+                        </div>
+                    </div>
+                    <div id="aficiones">
+                        <label>Aficiones:</label>
+                        <div>
+                            <input type="checkbox" id="musica" name="aficiones" value="musica">
+                            <label for="musica">Música</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="deportes" name="aficiones" value="deportes">
+                            <label for="deportes">Deportes</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="pintura" name="aficiones" value="pintura">
+                            <label for="pintura">Pintura</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="lectura" name="aficiones" value="lectura">
+                            <label for="lectura">Lectura</label>
+                        </div>
+                        <div>
+                            <label for="otros-aficiones">Otras:</label>
+                            <input type="text" id="otros-aficiones" name="otros-aficiones">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div>
+                <button class="btn sbm" type="submit">Enviar</button>
+                <button class="btn rst" type="reset">Restaurar</button>
+            </div>
+        </fieldset>
+    </form>
+    <style>
+        form{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        #otros-datos {
+            width: 50vw;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .ma * {
+            margin: 5px;
+        }
+
+        .ir input {
+            border-radius: 9px;
+        }
+
+        .btn{
+            margin-top: 10px;
+            margin-right: 10px;
+            border: 0;
+            width: 150px;
+            height: 50px;
+        }
+        .sbm{
+            font-weight: bold;
+            color: white;
+            background-color: #1abd35;
+        }
+        .rst{
+            font-weight: bold;
+            color: white;
+            background-color: #bd1aad;
+        }
+        input{
+            height: 25px;
+            border-color: #5e97dc;
+        }
+        h1{
+            color: #5e97dc;
+        }
+    </style>
+</body>
+
+</html>
